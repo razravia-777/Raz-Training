@@ -7,7 +7,7 @@ def get_all_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("input_file", help="input file from user")
     parser.add_argument("output_file", help="output file from user")
-    parser.add_argument("x", help="x num (still a string like '0')")  # אפשר לשנות את המשתנה ממחרוזת לINT בעזרת TYPE=INT
+    parser.add_argument("x", help="x num (still a string like '0')")  # אפשר לשנות את המשתנה ממחרוזת לINT  בעזרת TYPE=INT
     parser.add_argument("y", help="y num")
     args = parser.parse_args()
 

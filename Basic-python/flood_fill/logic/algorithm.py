@@ -16,7 +16,7 @@ def write_pbm_file(filename, data, x, y):
     matrix = add_color(data, int(x), int(y))
 
     with open(filename, 'w') as f:
-        f.write(f"{data["format"]}\n")  #format  # f.write("P1\n")  #יש פורמט קבוע ובדקתי למעלה שהוא מתקיים
+        f.write(f"{data["format"]}\n")  # format  # f.write("P1\n")  #יש פורמט קבוע ובדקתי למעלה שהוא מתקיים
         f.write(f"{data["width"]} {data["height"]}\n")  #width and height
         for row in matrix:
             f.write( "".join(row) + "\n")
