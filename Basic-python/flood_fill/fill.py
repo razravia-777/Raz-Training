@@ -1,12 +1,11 @@
-from logic.algorithm import read_pbm_file, write_pbm_file
-from validation.format import get_all_args
+from logic.write_to_file import write_pbm_file
+from user_inputs import get_user_inputs
 from PIL import Image
 
 
 def main():
-    input_file, output_file, x, y = get_all_args()
-    picture_data = read_pbm_file(input_file)   # הוצאת הDATA מהקובץ
-    write_pbm_file(output_file, picture_data, x, y)  # צביעה של החלקים הרצויים
+    input_file, output_file, x, y = get_user_inputs()
+    write_pbm_file(input_file, output_file, x, y)
 
     img = Image.open(output_file)
     img.show()

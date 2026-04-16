@@ -3,7 +3,4 @@ __pycache__/
 .idea/
 .env
 *.log
-
-#keep python and pbm files
-!*.pbm
-!*.py
+__pycache__/constants.cpython-314.pyc
