@@ -3,4 +3,4 @@ __pycache__/
 .idea/
 .env
 *.log
-__pycache__/constants.cpython-314.pyc
+out.pbm
